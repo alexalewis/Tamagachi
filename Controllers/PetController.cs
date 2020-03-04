@@ -58,7 +58,7 @@ namespace Tamagachi.Controllers
     public Pet Scold(int id)
     {
       var whichPet = db.Pets.FirstOrDefault(i => i.Id == id);
-      whichPet.HappinessLevel -= 3;
+      whichPet.HappinessLevel -= 5;
       db.SaveChanges();
       return whichPet;
     }
